@@ -17,14 +17,7 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'vue/script-indent': ['warn', 2, { baseIndent: 1 }],
-    'prettier/prettier': [
-      'off',
-      {
-        singleQuote: true,
-        trailingComma: 'es5',
-        vueIndentScriptAndStyle: true,
-      },
-    ],
+    'prettier/prettier': 'off',
   },
   overrides: [
     {

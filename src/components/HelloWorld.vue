@@ -1,6 +1,6 @@
 <template lang="pug">
 .hello
-  h1 {{ message }}
+  h1 {{ prettyMessage }}
   p
     | For a guide and recipes on how to configure / customize this project,<br>
     | check out the
@@ -52,7 +52,7 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent, ref } from 'vue';
+  import { defineComponent, ref, computed } from 'vue';
 
   export default defineComponent({
     name: 'HelloWorld',
@@ -62,7 +62,12 @@
     setup(props) {
       const message = ref(props.msg);
 
-      return { message };
+      const prettyMessage = computed(() => {
+        return `Pretty ${message.value}`
+      });
+
+
+      return { prettyMessage };
     },
   });
 </script>
