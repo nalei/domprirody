@@ -8,11 +8,23 @@
   h3 Installed CLI Plugins
   ul
     li
-      a(target='_blank' rel='noopener' href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router') router
+      a(
+        target='_blank'
+        rel='noopener'
+        href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router'
+      ) router
     li
-      a(target='_blank' rel='noopener' href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex') vuex
+      a(
+        target='_blank'
+        rel='noopener'
+        href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex'
+      ) vuex
     li
-      a(target='_blank' rel='noopener' href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript') typescript
+      a(
+        target='_blank'
+        rel='noopener'
+        href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript'
+      ) typescript
   h3 Essential Links
   ul
     li
@@ -22,7 +34,7 @@
     li
       a(target='_blank' rel='noopener' href='https://chat.vuejs.org') Community Chat
     li
-      a(target='_blank' rel='noopener' href='https://twitter.com/vuejs') {{ twitter }}
+      a(target='_blank' rel='noopener' href='https://twitter.com/vuejs') {{ msg }}
     li
       a(target='_blank' rel='noopener' href='https://news.vuejs.org') News
   h3 Ecosystem
@@ -40,29 +52,29 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+  import { defineComponent } from 'vue';
 
-export default defineComponent({
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
-});
+  export default defineComponent({
+    name: 'HelloWorld',
+    props: {
+      msg: String,
+    },
+  });
 </script>
 
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  h3 {
+    margin: 40px 0 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
 </style>
