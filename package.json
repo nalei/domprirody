@@ -44,7 +44,7 @@
     "vue-jest": "^5.0.0-0"
   },
   "lint-staged": {
-    "*.{ts,js,css,md,vue}": [
+    "*.{ts,js,css,vue}": [
       "eslint --fix",
       "prettier --write"
     ]

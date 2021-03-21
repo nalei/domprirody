@@ -29,7 +29,6 @@ module.exports = {
       'warn',
       {
         singleQuote: true,
-        trailingComma: 'es5',
         vueIndentScriptAndStyle: true,
       },
     ],
