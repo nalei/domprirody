@@ -59,6 +59,11 @@
     props: {
       msg: String,
     },
+    setup() {
+      const temp = true;
+
+      return {};
+    },
   });
 </script>
 
