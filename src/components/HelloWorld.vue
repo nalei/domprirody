@@ -63,9 +63,8 @@
       const message = ref(props.msg);
 
       const prettyMessage = computed(() => {
-        return `Pretty ${message.value}`
+        return `Pretty ${message.value}`;
       });
-
 
       return { prettyMessage };
     },
