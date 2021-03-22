@@ -1,54 +1,6 @@
 <template lang="pug">
 .hello
-  h1 {{ prettyMessage }}
-  p
-    | For a guide and recipes on how to configure / customize this project,<br>
-    | check out the
-    a(target='_blank' rel='noopener' href='https://cli.vuejs.org') vue-cli documentation
-  h3 Installed CLI Plugins
-  ul
-    li
-      a(
-        target='_blank'
-        rel='noopener'
-        href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router'
-      ) router
-    li
-      a(
-        target='_blank'
-        rel='noopener'
-        href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex'
-      ) vuex
-    li
-      a(
-        target='_blank'
-        rel='noopener'
-        href='https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript'
-      ) typescript
-  h3 Essential Links
-  ul
-    li
-      a(target='_blank' rel='noopener' href='https://vuejs.org') Core Docs
-    li
-      a(target='_blank' rel='noopener' href='https://forum.vuejs.org') Forum
-    li
-      a(target='_blank' rel='noopener' href='https://chat.vuejs.org') Community Chat
-    li
-      a(target='_blank' rel='noopener' href='https://twitter.com/vuejs') {{ msg }}
-    li
-      a(target='_blank' rel='noopener' href='https://news.vuejs.org') News
-  h3 Ecosystem
-  ul
-    li
-      a(target='_blank' rel='noopener' href='https://router.vuejs.org') vue-router
-    li
-      a(target='_blank' rel='noopener' href='https://vuex.vuejs.org') vuex
-    li
-      a(target='_blank' rel='noopener' href='https://github.com/vuejs/vue-devtools#vue-devtools') vue-devtools
-    li
-      a(target='_blank' rel='noopener' href='https://vue-loader.vuejs.org') vue-loader
-    li
-      a(target='_blank' rel='noopener' href='https://github.com/vuejs/awesome-vue') awesome-vue
+  h1 {{ pageTitle }}
 </template>
 
 <script lang="ts">
@@ -57,16 +9,15 @@
   export default defineComponent({
     name: 'HelloWorld',
     props: {
-      msg: String,
+      msg: {
+        type: String,
+        default: '',
+      },
     },
     setup(props) {
-      const message = ref(props.msg);
+      const pageTitle = ref(props.msg);
 
-      const prettyMessage = computed(() => {
-        return `Pretty ${message.value}`;
-      });
-
-      return { prettyMessage };
+      return { pageTitle };
     },
   });
 </script>
