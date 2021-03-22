@@ -1,13 +1,18 @@
 <template lang="pug">
 .hello
   h1 {{ pageTitle }}
+  Button Click me!
 </template>
 
 <script lang="ts">
-  import { defineComponent, ref, computed } from 'vue';
+  import { defineComponent, ref } from 'vue';
+  import Button from '@/components/button/Button.vue';
 
   export default defineComponent({
     name: 'HelloWorld',
+    components: {
+      Button,
+    },
     props: {
       msg: {
         type: String,
