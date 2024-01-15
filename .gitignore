@@ -1,0 +1,49 @@
+.DS_Store
+node_modules/
+
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+/coverage/
+/storybook-static
+/test-reports/
+
+# Service worker builded app
+/public/workers/
+
+# local env files
+.env.*.local
+.env.local
+
+# Log files
+npm-debug.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vite
+# rollup-plugin-visualizer
+/stats.html
+/stats.json
+
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/patches
+.pnp.*
+yarn-debug.log*
+yarn-error.log*
+
+
+# cert
+.cert
+
+# eslint
+.eslintcache
