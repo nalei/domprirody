@@ -8,8 +8,8 @@ const components = [
 
 export default {
   install(app: App) {
-    components.forEach(com => {
-      app.component(com.name, com)
+    components.forEach(component => {
+      app.component(component.name, component)
     })
   }
 }
