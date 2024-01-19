@@ -1,18 +1,97 @@
-# Vue 3 + TypeScript + Vite
+<p align="center">
+  <a href="https://www.chromatic.com/">
+    <img alt="Chromatic" src="https://avatars2.githubusercontent.com/u/24584319?s=200&v=4" width="60" />
+  </a>
+</p>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<h1 align="center">
+  Chromatic's Intro to Storybook Vue template
+</h1>
 
-## Recommended IDE Setup
+This template ships with the main Vue and Storybook configuration files you'll need to get up and running fast.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 🚅 Quick start
 
-## Type Support For `.vue` Imports in TS
+1.  **Create the application.**
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+    Use [degit](https://github.com/Rich-Harris/degit) to get this template.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+    ```shell
+    # Clone the template
+    npx degit chromaui/intro-storybook-vue-template taskbox
+    ```
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+1.  **Install the dependencies.**
+
+    Navigate into your new site’s directory and install the necessary dependencies.
+
+    ```shell
+    # Navigate to the directory
+    cd taskbox/
+
+    # Install the dependencies
+    yarn
+    ```
+
+1.  **Open the source code and start editing!**
+
+    Open the `taskbox` directory in your code editor of choice and building your first component!
+
+1.  **Browse your stories!**
+
+    Run `yarn storybook` to see your component's stories at `http://localhost:6006`
+
+## 🔎 What's inside?
+
+A quick look at the top-level files and directories included with this template.
+
+    .
+    ├── .storybook
+    ├── node_modules
+    ├── public
+    ├── src
+    ├── .gitignore
+    ├── .eslintrc.cjs
+    ├── .prettierrc.json
+    ├── index.html
+    ├── LICENSE
+    ├── yarn.lock
+    ├── package.json
+    ├── vite.config.js
+    └── README.md
+
+1.  **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/react/configure/overview) files.
+
+2.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
+
+3.  **`public`**: This directory will contain the development and production build of the site.
+
+4.  **`src`**: This directory will contain all of the code related to what you will see on your application.
+
+5.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
+
+6.  **`.eslintrc.cjs`**: This file contains the configuration for ESLint.
+
+7.  **`.prettierrc.json`**: This file contains the configuration for Prettier.
+
+8.  **`.index.html`**: This is the HTML page that is served when generating a development or production build.
+
+9.  **`LICENSE`**: The template is licensed under the MIT licence.
+
+10. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
+
+11. **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
+
+12. **`vite.config.js`**: This is the configuration file for [Vite](https://vitejs.dev/), a build tool that aims to provide a faster and leaner development experience for modern web projects.
+
+13. **`README.md`**: A text file containing useful reference information about the project.
+
+## Contribute
+
+If you encounter an issue with the template, we encourage you to open an issue in this template's repository.
+
+## Learning Storybook
+
+1. Read our introductory tutorial at [Learn Storybook](https://storybook.js.org/tutorials/intro-to-storybook/vue/en/get-started/).
+2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
+3. See our official documentation at [Storybook](https://storybook.js.org/).

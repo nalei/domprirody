@@ -14,7 +14,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: './src/index.ts',
-      name: 'domprirody',
+      name: 'proxy-ui',
       fileName: 'index'
     },
     rollupOptions: {

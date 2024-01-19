@@ -1,34 +1,41 @@
-import { defineComponent as c, resolveComponent as a, openBlock as p, createBlock as l, normalizeProps as f, guardReactiveProps as m, withCtx as u, renderSlot as _ } from "vue";
-import { ElButton as i } from "element-plus";
-const d = c({
-  name: "sf-button",
+import { defineComponent as p, resolveComponent as c, openBlock as a, createBlock as l, withCtx as f, renderSlot as i } from "vue";
+import { ElButton as m } from "element-plus";
+const u = p({
+  name: "proxy-button",
+  inheritAttrs: !1,
   components: {
-    ElButton: i
+    ElButton: m
+  },
+  props: {
+    type: {
+      type: String
+    }
   }
-}), $ = (t, o) => {
-  const n = t.__vccOpts || t;
-  for (const [e, r] of o)
-    n[e] = r;
-  return n;
+}), _ = (t, o) => {
+  const e = t.__vccOpts || t;
+  for (const [n, r] of o)
+    e[n] = r;
+  return e;
 };
-function v(t, o, n, e, r, h) {
-  const s = a("el-button");
-  return p(), l(s, f(m(t.$attrs)), {
-    default: u(() => [
-      _(t.$slots, "default")
+function d(t, o, e, n, r, $) {
+  const s = c("el-button");
+  return a(), l(s, { type: t.type }, {
+    default: f(() => [
+      i(t.$slots, "default")
     ]),
     _: 3
-  }, 16);
+  }, 8, ["type"]);
 }
-const B = /* @__PURE__ */ $(d, [["render", v]]), b = [
-  B
-], C = {
+const y = /* @__PURE__ */ _(u, [["render", d]]);
+const x = [
+  y
+], b = {
   install(t) {
-    b.forEach((o) => {
+    x.forEach((o) => {
       t.component(o.name, o);
     });
   }
 };
 export {
-  C as default
+  b as default
 };

@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import '@/style.css'
+import './style.css'
+
 import '../dist/style.css'
 import Ui from '../dist/index'
 

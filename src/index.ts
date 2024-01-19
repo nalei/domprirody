@@ -1,9 +1,9 @@
 import { App } from 'vue'
-import SFButton from './components/SfButton.vue'
+import ProxyButton from '@/components/button/ProxyButton.vue'
 import 'element-plus/dist/index.css'
 
 const components = [
-  SFButton
+  ProxyButton
 ]
 
 export default {

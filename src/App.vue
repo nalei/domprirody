@@ -1,7 +1,7 @@
 <template>
   <div>
-    <sf-button type="primary">
+    <proxy-button type="primary">
       Primary
-    </sf-button>
+    </proxy-button>
   </div>
 </template>
