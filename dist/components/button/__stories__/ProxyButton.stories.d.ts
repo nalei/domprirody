@@ -1,4 +1,4 @@
-import ProxyButton from '@/components/button/ProxyButton.vue';
+import ProxyButton from '../ProxyButton.vue';
 import type { Meta, StoryObj } from '@storybook/vue3';
 declare const meta: Meta<typeof ProxyButton>;
 export default meta;

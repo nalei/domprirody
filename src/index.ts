@@ -1,4 +1,4 @@
-import { App } from 'vue'
+import type { App } from 'vue'
 import ProxyButton from '@/components/button/ProxyButton.vue'
 import 'element-plus/dist/index.css'
 

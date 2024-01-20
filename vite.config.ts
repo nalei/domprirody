@@ -1,30 +1,31 @@
+import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import tsconfigPaths from 'vite-tsconfig-paths'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
-  plugins: [
-    vue(),
-    tsconfigPaths({
-      loose: true,
-    }),
-    dts(),
-  ],
+  plugins: [vue(), dts()],
   build: {
+    minify: false,
+    cssCodeSplit: false,
     lib: {
-      entry: './src/index.ts',
       name: 'proxy-ui',
-      fileName: 'index'
+      entry: 'src/index.ts',
+      fileName: 'index',
     },
     rollupOptions: {
-      external: ['vue', 'element-plus'],
+      treeshake: true,
+      external: ['vue'],
       output: {
         globals: {
           vue: 'vue',
-          'element-plus': 'ElementPlus'
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
 })
