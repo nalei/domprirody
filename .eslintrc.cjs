@@ -21,6 +21,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   rules: {
+    semi: [2, "never"],
     quotes: [2, 'single', 'avoid-escape'],
     'vue/multi-word-component-names': 0,
     '@typescript-eslint/explicit-function-return-type': [
@@ -32,6 +33,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 1,
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
   },
   ignorePatterns: [
     '*.snap',

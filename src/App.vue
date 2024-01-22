@@ -1,7 +1,3 @@
 <template>
-  <div>
-    <proxy-button type="primary">
-      Primary
-    </proxy-button>
-  </div>
+  <h2>Proxy Ui</h2>
 </template>

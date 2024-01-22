@@ -15,7 +15,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.cjs,.mjs,.ts --fix --ignore-path .gitignore",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o docs"
   },
   "dependencies": {
     "element-plus": "^2.5.2",

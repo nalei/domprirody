@@ -1501,6 +1501,7 @@ For more detail, please visit: ${ref}
     ProxyButton
   ];
   const index = {
+    ...components,
     install(app) {
       components.forEach((component) => {
         app.component(component.name, component);
